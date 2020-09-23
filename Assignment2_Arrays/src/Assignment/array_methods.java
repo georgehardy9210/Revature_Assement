@@ -5,6 +5,7 @@ public class array_methods {
 	public static void main(String[] args) {
 
 		int[] ar = { 10, 22, 33, 11, 10, 10, 11, 22, 44, 22 };
+		
 
 		OddPrint(ar);
 
@@ -50,4 +51,31 @@ public class array_methods {
 
 	}
 
+	public static bool isPalindrome(String val){
+	
+		int len-1 = val.length;
+		String temp = val;
+		
+		
+		
+		for(int i=0;i<val.length;i++){
+			
+		
+			if((val[i] != temp[len])){
+			
+				return false;
+				
+			}
+			
+			len--;
+			 
+		}
+		
+		return true;
+		
+		
+		
+		
+	}
+	
 }
