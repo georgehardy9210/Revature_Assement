@@ -61,7 +61,7 @@ public class array_methods {
 		
 		
 		
-		for(int i=0;i<val.length;i++){
+		for(int i=0;i<val[pos].length;i++){
 			
 		
 			if((val[pos].charAt(i) != temp[pos].charAt(len))){
