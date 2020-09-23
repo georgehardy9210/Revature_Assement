@@ -5,14 +5,17 @@ public class array_methods {
 	public static void main(String[] args) {
 
 		int[] ar = { 10, 22, 33, 11, 10, 10, 11, 22, 44, 22 };
-		
+		String cat = "racecar";
 
 		OddPrint(ar);
 
 		boolean b = isPrime(11);
 
 		System.out.println(b);
-
+		
+		boolean palindrome = isPalindrome(cat);
+		if(palindrome){ System.out.println("Cat is a Palindrome"); }
+		else{ System.out.println("Cat is not a Palindrome!");}
 	}
 
 	public static void OddPrint(int[] arr) {
