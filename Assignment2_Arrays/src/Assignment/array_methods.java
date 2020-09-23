@@ -5,7 +5,7 @@ public class array_methods {
 	public static void main(String[] args) {
 
 		int[] ar = { 10, 22, 33, 11, 10, 10, 11, 22, 44, 22 };
-		String cat = "racecar";
+		String[] cat = {"racecar", "car", "sas"};
 
 		OddPrint(ar);
 
@@ -13,9 +13,9 @@ public class array_methods {
 
 		System.out.println(b);
 		
-		boolean palindrome = isPalindrome(cat);
-		if(palindrome){ System.out.println("Cat is a Palindrome"); }
-		else{ System.out.println("Cat is not a Palindrome!");}
+		boolean palindrome = isPalindrome(cat,1);
+		if(palindrome){ System.out.println(cat[1] + " is a Palindrome"); }
+		else{ System.out.println(cat[1] + " is not a Palindrome!");}
 	}
 
 	public static void OddPrint(int[] arr) {
@@ -54,7 +54,7 @@ public class array_methods {
 
 	}
 
-	public static bool isPalindrome(String val){
+	public static bool isPalindrome(String val, int pos){
 	
 		int len-1 = val.length;
 		String temp = val;
@@ -64,7 +64,7 @@ public class array_methods {
 		for(int i=0;i<val.length;i++){
 			
 		
-			if((val.charAt(i) != temp.charAt(len))){
+			if((val[pos].charAt(i) != temp[pos].charAt(len))){
 			
 				return false;
 				
