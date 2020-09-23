@@ -61,7 +61,7 @@ public class array_methods {
 		for(int i=0;i<val.length;i++){
 			
 		
-			if((val[i] != temp[len])){
+			if((val.charAt(i) != temp.charAt(len))){
 			
 				return false;
 				
