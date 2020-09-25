@@ -7,9 +7,8 @@ public class Employee extends Person{
 	private String designation; //has-A
 	private double salary;//has-A
 	private Address permenantAddress;//has-A
-
-	private Address presentAddress
-	
+	private Address presentAddress;
+	private ClientName client;
 	
 	
 	public Employee() {
@@ -42,15 +41,34 @@ public class Employee extends Person{
 	public Address getPermenantAddress() {
 		return permenantAddress;
 	}
-
+	
+	public ClientName getClientName() {
+		return client;
+	}
+	
 	public void setPermenantAddress(Address permenantAddress) {
 		this.permenantAddress = permenantAddress;
+	}
+	
+	public void setClientName(ClientName client) {
+		this.client = client;
+		
 	}
 
 	@Override
 	public String toString() {
 		return "Employee [designation=" + designation + ", salary=" + salary + ", permenantAddress=" + permenantAddress
-				+ ", getId()=" + getId() + ", getName()=" + getName() + "]";
+				+ ", presentAddress=" + presentAddress + ", client=" + client + "]";
 	}
+
+	public Address getPresentAddress() {
+		return presentAddress;
+	}
+
+	public void setPresentAddress(Address presentAddress) {
+		this.presentAddress = presentAddress;
+	}
+	
+	
 	
 }

@@ -5,6 +5,7 @@ public class Player extends Person {
 	//Bring a has-A relationship here stating that Player plays for a Team(tid,teamName,coachName)
 	private double score;
 	private String sportName;
+	private TeamClass team;
 	
 	public Player() {
 		// TODO Auto-generated constructor stub
@@ -32,10 +33,19 @@ public class Player extends Person {
 		this.sportName = sportName;
 	}
 
+	
+	
 	@Override
 	public String toString() {
-		return "Player [score=" + score + ", sportName=" + sportName + ", getId()=" + getId() + ", getName()="
-				+ getName() + "]";
+		return "Player [score=" + score + ", sportName=" + sportName + ", team=" + team + "]";
+	}
+
+	public TeamClass getTeam() {
+		return team;
+	}
+
+	public void setTeam(TeamClass team) {
+		this.team = team;
 	}
 	
 	
